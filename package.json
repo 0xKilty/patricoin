@@ -1,0 +1,19 @@
+{
+  "name": "getprice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@uniswap/sdk-core": "^3.0.1",
+    "ethers": "^5.7.2",
+    "usedapp": "^1.0.0"
+  },
+  "dependencies": {
+    "@usedapp/core": "^1.2.2"
+  }
+}
