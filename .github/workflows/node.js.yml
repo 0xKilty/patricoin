@@ -33,3 +33,4 @@ jobs:
     - run: npm --version
     #- run: npm install ts-node
     - run: npx ts-node getPrice.ts ${{secrets.Key}}
+    - run: echo "After run"
