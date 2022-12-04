@@ -30,7 +30,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: |
-          echo $apikey | sed 's/./& /g' 
           ls
           npm install
           npm install @uniswap/v3-sdk --save-dev
