@@ -36,4 +36,6 @@ jobs:
     - run: npm install @uniswap/v3-sdk --save-dev
     - run: npx ts-node getPrice.ts $apikey
     - run: more data.json
+    - run: git add -A
+    - run: git commit -m "update graph"
     - run: git status
