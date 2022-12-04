@@ -31,6 +31,6 @@ jobs:
     #- run: npm test
     - run: ls
     - run: npm install
-    - run: npm install @uniswap/sdk --save-dev
+    - run: npm install @uniswap/v3-sdk --save-dev
     - run: npx ts-node getPrice.ts ${{secrets.Key}}
     - run: echo "After run"
