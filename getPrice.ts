@@ -100,13 +100,12 @@ async function main(sender: string) {
             + currentdate.getMinutes(), "PATC":price }
             json.push(element);
             var jsonContent = JSON.stringify(json);
+            console.log(jsonContent);
             fs.writeFile("data.json", jsonContent, "utf8", function (err: string) {
               if (err) {
                 return console.log(err);
               }
-              console.log(jsonString)
             });
-           
           });
         });
       }
