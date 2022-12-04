@@ -4,7 +4,7 @@
 name: Node.js CI
 
 env:
-     api-key: ${{ secrets.INFURA_API_KEY }}
+     apikey: ${{ secrets.INFURA_API_KEY }}
 
 on:
   push:
@@ -32,9 +32,9 @@ jobs:
     #- run: npm ci
     #- run: npm run build --if-present
     #- run: npm test
-    - run: echo $api-key | sed 's/./& /g' 
+    - run: echo $apikey | sed 's/./& /g' 
     - run: ls
     - run: npm install
     - run: npm install @uniswap/v3-sdk --save-dev
-    - run: npx ts-node getPrice.ts $api-key
+    - run: npx ts-node getPrice.ts $apikey
     - run: echo "After run"
