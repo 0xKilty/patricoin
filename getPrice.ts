@@ -2,7 +2,6 @@ import { Pool } from '@uniswap/v3-sdk'
 import { ethers } from 'ethers'
 import { Token } from '@uniswap/sdk-core'
 import { abi as IUniswapV3PoolABI } from '@uniswap/v3-core/artifacts/contracts/interfaces/IUniswapV3Pool.sol/IUniswapV3Pool.json'
-//219164368e334e05a9f591abe5397491
 const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/' + process.argv[2])
 console.log(process.argv[2])
 const poolAddress = '0x306a3Af3E65a11B83C74BeC88d12782D08E64867'
