@@ -29,13 +29,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: more data.json
-    - run: echo $apikey | sed 's/./& /g' 
-    - run: ls
-    - run: npm install
-    - run: npm install @uniswap/v3-sdk --save-dev
-    - run: npx ts-node getPrice.ts $apikey
-    - run: more data.json
-    - run: git add -A
-    - run: git commit -m "update graph"
-    - run: git status
+    - run: |
+          echo $apikey | sed 's/./& /g' 
+          ls
+          npm install
+          npm install @uniswap/v3-sdk --save-dev
+          npx ts-node getPrice.ts $apikey
+          more data.json
+          git add -A
+          git commit -m "update graph"
+          git status
