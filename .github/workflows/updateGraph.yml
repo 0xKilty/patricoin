@@ -37,6 +37,6 @@ jobs:
           more data.json
           git config --global user.name "0xKilty"
           git config --global user.email "iankilty1@gmail.com"
-          git add -A
+          git add data.json
           git commit -m "update graph"
-          git status
+          git push
