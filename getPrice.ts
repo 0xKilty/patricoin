@@ -92,7 +92,7 @@ async function main(sender: string) {
             }
             var json = JSON.parse(jsonString);
             if (json.length >= capacity) {
-              json.pop();
+              json.shift();
             }
             var currentdate = new Date(); 
             var element = {"date": currentdate.getDate() + "/"
