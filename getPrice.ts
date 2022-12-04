@@ -86,6 +86,7 @@ async function main(sender: string) {
           var capacity = 168;
           var json;
           fs.readFile("./data.json", "utf8", (err: string, jsonString: string) => {
+            console.log(jsonString)
             if (err) {
               return;
             }
