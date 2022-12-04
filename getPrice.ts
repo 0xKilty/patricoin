@@ -3,7 +3,6 @@ import { ethers } from 'ethers'
 import { Token } from '@uniswap/sdk-core'
 import { abi as IUniswapV3PoolABI } from '@uniswap/v3-core/artifacts/contracts/interfaces/IUniswapV3Pool.sol/IUniswapV3Pool.json'
 const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/' + process.argv[2])
-console.log(process.argv[2])
 const poolAddress = '0x306a3Af3E65a11B83C74BeC88d12782D08E64867'
 const poolContract = new ethers.Contract(poolAddress, IUniswapV3PoolABI, provider)
 var price: number;
@@ -84,8 +83,8 @@ async function main(sender: string) {
           price = price * ETHUSD;
           const fs = require("fs");
           var capacity = 168;
-          var json;
           fs.readFile("./data.json", "utf8", (err: string, jsonString: string) => {
+            
             if (err) {
               return;
             }
@@ -107,6 +106,7 @@ async function main(sender: string) {
               }
               console.log(jsonString)
             });
+           
           });
         });
       }
