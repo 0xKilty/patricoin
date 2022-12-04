@@ -3,6 +3,9 @@
 
 name: Node.js CI
 
+env:
+     key: ${{ secrets.Key }}
+
 on:
   push:
     branches: [ "main" ]
@@ -33,5 +36,5 @@ jobs:
     - run: ls
     - run: npm install
     - run: npm install @uniswap/v3-sdk --save-dev
-    - run: npx ts-node getPrice.ts ${{secrets.Key}}
+    - run: npx ts-node getPrice.ts $key
     - run: echo "After run"
