@@ -36,6 +36,8 @@ jobs:
           npm install @uniswap/v3-sdk --save-dev
           npx ts-node getPrice.ts $apikey
           more data.json
+          git config --global user.name "0xKilty"
+          git config --global user.email "iankilty1@gmail.com"
           git add -A
           git commit -m "update graph"
           git status
