@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/patricoin/static/css/main.4e597897.css",
-    "main.js": "/patricoin/static/js/main.fe180110.js",
+    "main.js": "/patricoin/static/js/main.4256ff1e.js",
     "static/media/blob-scene-haikei.svg": "/patricoin/static/media/blob-scene-haikei.d4f839c35632474799bd5adf65c84660.svg",
     "static/media/metamask-icon.svg": "/patricoin/static/media/metamask-icon.b3649ecfe8c45f27ceb9f99d70f3d24e.svg",
     "static/media/bike-svgrepo-com.svg": "/patricoin/static/media/bike-svgrepo-com.53eae313508fc529540e4b21d4440861.svg",
     "static/media/blurry-gradient-haikei.svg": "/patricoin/static/media/blurry-gradient-haikei.f8848acefc1fa77983ff9b4e40730cd3.svg",
     "index.html": "/patricoin/index.html",
     "main.4e597897.css.map": "/patricoin/static/css/main.4e597897.css.map",
-    "main.fe180110.js.map": "/patricoin/static/js/main.fe180110.js.map"
+    "main.4256ff1e.js.map": "/patricoin/static/js/main.4256ff1e.js.map"
   },
   "entrypoints": [
     "static/css/main.4e597897.css",
-    "static/js/main.fe180110.js"
+    "static/js/main.4256ff1e.js"
   ]
 }
